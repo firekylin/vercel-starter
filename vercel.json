@@ -19,7 +19,8 @@
           "data/**",
           "themes/**",
           "uploads/**",
-          
+          "node_modules/firekylin/firekylin.pgsql",
+          "node_modules/firekylin/firekylin.sql",
           "node_modules/@mathjax/mathjax-newcm-font/**/*",
           "node_modules/mhchemparser/**/*"
         ]
