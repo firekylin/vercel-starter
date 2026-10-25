@@ -29,9 +29,9 @@ module.exports = {
     "user": POSTGRES_USER,
     "password": POSTGRES_PASSWORD,
     "port": POSTGRES_PORT,
-    "prefix": POSTGRES_PREFIX,
+    "prefix": POSTGRES_PREFIX || "fk_",
     "connectionLimit": 1,
-    "ssl": POSTGRES_SSL === 'true' || POSTGRES_URL?.includes('sslmode=require') ? { rejectUnauthorized: false } : false,
+    "ssl": POSTGRES_SSL === 'true' || POSTGRES_URL?.includes("sslmode=require") ? { rejectUnauthorized: false } : false,
   }) : ({
     "type": FK_DB_MODE,
     "host": FK_DB_HOST,
