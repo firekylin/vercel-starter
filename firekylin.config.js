@@ -30,7 +30,7 @@ module.exports = {
     "user": POSTGRES_USER,
     "password": POSTGRES_PASSWORD,
     "port": POSTGRES_PORT || "5432",
-    "prefix": POSTGRES_PREFIX || "fk2_",
+    "prefix": POSTGRES_PREFIX || "fk_",
     "connectionLimit": 1,
     "ssl": POSTGRES_SSL === 'true' || POSTGRES_URL?.includes('sslmode=require'),
   }) : ({
